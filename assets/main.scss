@@ -2,26 +2,33 @@
 ---
 
 $text-color: #46433A;
-$anchor-text-color: #990033;
+$red-text-color: #990033;
+$anchor-text-color: #46422A;
 $background-color: #F1EED9;
 
+.small-sty {
+       color: #777;
+       float: left;
+       padding-left: 0px;
+}
 
-/* Either this */
-/*
-h2 {
-   color: #990033;
-}*/
+.red {
+     color: $red-text-color;
+}
 
-/* or this */
+.gray {
+     color: $text-color;
+}
 
 h1 {
-   color: #990033;
+   color: $text-color; /* default */
 }
 
 h2 {
    display: inline;
    margin: 5px;
    vertical-align: top;
+   color: $red-text-color;
 }
 
 body {
@@ -32,6 +39,19 @@ body {
 
 .fa-spec {
          vertical-align:middle
+}
+
+.custom-bullet-item {
+  float: left;
+  margin-right: 12px;
+  margin-top: 12px;
+  color: $red-text-color;
+}
+
+.custom-bullet-item-img {
+  float: left;
+  color: $red-text-color;
+  width: 20px;
 }
 
 header,
@@ -69,6 +89,13 @@ a:hover {
 	margin: 0.8em 0;
 }
 
+.social-list {
+        left: 20px;
+	font-size: 0.8em;
+	margin: 0.6em 0;
+        margin-left: 32px;
+}
+
 /* override the left margin added by font awesome for the main content list,
 since it must be aligned with the content */
 .fa-ul.main-list {
@@ -78,7 +105,18 @@ since it must be aligned with the content */
 /* list icons */
 .main-list-item-icon {
 	width: 36px;
-	color: #990033;
+	color: $text-color;
+}
+
+/* footer icons */
+.main-list-item-icon-small {
+	width: 15px;
+	color: $text-color;
+}
+
+.main-list-item-icon-small-gray {
+	width: 15px;
+	color: $text-color;
 }
 
 /*** logo ***/
@@ -108,6 +146,7 @@ since it must be aligned with the content */
 p {
 text-align: justify;
     text-justify: inter-word;
+padding: 5px
 }
 
 /*** tagline ***/
@@ -121,10 +160,10 @@ text-align: justify;
 hr {
 	border: 0;
 	height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
-	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
-	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
-	background-image: -o-linear-gradient(left, rgba(0,0,0,0), $text-color, rgba(0,0,0,0));
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), $red-text-color, rgba(0,0,0,0));
+	background-image: -moz-linear-gradient(left, rgba(0,0,0,0), $red-text-color, rgba(0,0,0,0));
+	background-image: -ms-linear-gradient(left, rgba(0,0,0,0), $red-text-color, rgba(0,0,0,0));
+	background-image: -o-linear-gradient(left, rgba(0,0,0,0), $red-text-color, rgba(0,0,0,0));
 }
 
 /*** footer ***/
@@ -148,7 +187,7 @@ footer {
 	/* wrapper stays 480px wide past 480px wide and is kept centered */
 	.wrapper {
 		width: 480px;
-		margin: 10% auto 0 auto;
+		margin: 10% auto 10% auto;
 	}
 }
 

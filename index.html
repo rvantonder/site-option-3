@@ -1,7 +1,7 @@
 ---
 layout: base
 ---
-<div class="wrapper">
+<div id="base" class="wrapper">
     <header>
         {% if site.compass.logo %}
         <div class="logo-container">
@@ -10,9 +10,10 @@ layout: base
         {% endif %}
 
         {% if site.compass.author %}
-        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
+        <!--<div class="author-container"><h1>{{ site.compass.author }}</h1></div>-->
+        <div class="author-container"><h1>Rijnard van Tonder</h1></div>
         {% endif %}
-
+        <hr/>
         {% if site.compass.tagline %}
         <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
         {% endif %}
