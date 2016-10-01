@@ -105,20 +105,6 @@ since it must be aligned with the content */
   border: 2px solid #F1EED9;
   /*box-shadow: 0 0 0 3px $text-color;*/ }
 
-/*** profile ***/
-.profile-container {
-  text-align: right; }
-
-.profile {
-  width: 150px;
-  height: 150px;
-  display: inline-block;
-  background-size: cover;
-  border-radius: 10px;
-  -moz-border-radius: 10px;
-  border: 2px solid #F1EED9;
-  /*box-shadow: 0 0 0 3px $text-color;*/ }
-
 /*** author ***/
 .author-container h1 {
   font-size: 2.8em;
