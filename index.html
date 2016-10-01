@@ -1,28 +1,221 @@
----
-layout: base
----
-<div id="base" class="wrapper">
-    <header>
-        {% if site.compass.logo %}
-        <div class="logo-container">
-          <a class="logo" href="http://www.cmu.edu" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
-        </div>
-        {% endif %}
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rijnard van Tonder &#8226; Ph.D. student
+</title>
 
-        {% if site.compass.author %}
-        <!--<div class="author-container"><h1>{{ site.compass.author }}</h1></div>-->
+  <link rel="apple-touch-icon" href="images/cmu-logo-alpha-redder.png"/>
+  <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64" href="http://excentris.net/favicon.ico" />
+
+  <link rel="stylesheet" href="assets/normalize.css">
+  <link rel="stylesheet" href="assets/main.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+
+  <link rel="canonical" href="http://excentris.net/">
+
+  <meta name="author" content="Rijnard van Tonder">
+  <meta name="description" content="Ph.D. student"/>
+
+  <meta property="og:title" content="Ph.D. student"/>
+  <meta property="og:url" content="http://excentris.net/"/>
+  <meta property="og:image" content="http://excentris.net/images/cmu-logo-alpha-redder.png"/>
+  <meta property="og:description" content=""/>
+  <meta property="og:site_name" content="Ph.D. student">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="assets/js/example.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66921703-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+  <body>
+  <div id="base" class="wrapper">
+    <header>
+        
+        <div class="logo-container">
+          <a class="logo" href="http://www.cmu.edu" style="background-image: url('images/cmu-logo-alpha-redder.png')"></a>
+        </div>
+        
+
+        
+        <!--<div class="author-container"><h1>Rijnard van Tonder</h1></div>-->
         <div class="author-container"><h1>Rijnard van Tonder</h1></div>
-        {% endif %}
+        
         <hr/>
-        {% if site.compass.tagline %}
-        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
-        {% endif %}
+        
+        <div class="tagline-container"><p>Ph.D. student</p></div>
+        
     </header>
     <main>
-      {% if site.compass.include_content %}
+      
       <div class="content">
-        {% include content.html %}
+        <h2>About Me</h2>
+<p>
+Over the past 5 years I've maintained an avid interest in the broad field of computer security. I now focus my efforts specifically toward research in software security, program analysis, and vulnerability discovery. I'm further interested in academic advances relating to software fuzzing and exploitation.
+<br><br>
+
+It is a privilege to be advised by <a style="text-decoration:underline" href="http://users.ece.cmu.edu/~dbrumley/index.html">David Brumley</a>.</p>
+<br>
+
+<h2>Education</h2>
+
+<ul class="fa-ul main-list">
+  <li class="paragraph-list-item">
+    <small style="color: #777; float: left"><i class="fa fa-calendar"></i>  2014-current | </small>&nbsp;Ph.D. Computer Engineering, Carnegie Mellon University
+    <br><br>
+  <li class="paragraph-list-item">
+    <small style="color: #777; float: left"><i class="fa fa-calendar"></i>  2013-2014 | </small>&nbsp;M.Eng. Electronic Engineering, Stellenbosch University
+    <br><br>
+  </li>
+  <li class="paragraph-list-item">
+    <small style="color: #777; float: left"><i class="fa fa-calendar"></i>  2008-2012 | </small>&nbsp;B.Sc. Hon. Computer Science, Stellenbosch University
+  </li>
+</ul>
+<br>
+
+<h2>Publications</h2>
+<ul class="fa-ul main-list">
+  <li class="paragraph-list-item">
+    Rijnard van Tonder and Herman Engelbrecht,
+    <i>Lowering the USB Fuzzing Barrier by Transparent Two-Way Emulation</i>, WOOT '14.
+    <br><br>
+  </li>
+  <li class="paragraph-list-item">
+    Rijnard van Tonder and Willem Visser,
+    <i>Firegaze: A Distributed Firewall Log Processing and Visualizations Solution</i>, SATNAC '13
+  </li>
+</ul>
+<br>
+
+<h2>Work Experience</h2>
+
+<!-- 0 -->
+<p><i class="fa fa-university fa-lg custom-bullet-item"></i>
+Carnegie Mellon University<br>
+      <small class="small-sty">
+        <i class="fa fa-calendar"></i> Spring 2015 |
+        <i class="fa fa-map-marker"></i> Pittsburgh, PA |
+      </small>
+</p>
+Teaching Assistant for 18-739L (CTF-based security course).
+<br>
+<!-- 1 -->
+<p><i class="fa fa-windows fa-lg custom-bullet-item"></i>
+Microsoft Research<br>
+      <small style="color: #777; float: left">
+        <i class="fa fa-calendar"></i> May-Jul 2014 |
+        <i class="fa fa-map-marker"></i> Redmond, WA |
+      </small>
+</p>
+Intern at Microsoft Research with Patrice Godefroid in the RiSE group.
+<!-- 2 -->
+<p><i class="fa fa-x fa-lg custom-bullet-item">
+    <img class="custom-bullet-item-img" src="images/naspers.png">
+</i>
+Multichoice, Naspers<br>
+      <small style="color: #777; float: left">
+        <i class="fa fa-calendar"></i> 2012-2013 |
+        <i class="fa fa-map-marker"></i> Jhb, ZA |
+      </small>
+</p>
+Collaboration as part of Master's Research
+<!-- 3 -->
+<p><i class="fa fa-x fa-lg custom-bullet-item">
+    <img class="custom-bullet-item-img" src="images/mwr.png">
+</i>
+MWR InfoSecurity<br>
+      <small style="color: #777; float: left">
+        <i class="fa fa-calendar"></i> Jan-Feb 2013 |
+        <i class="fa fa-map-marker"></i> Jhb, ZA |
+      </small>
+</p>
+Intern working on Android pen-testing framework.
+<!-- 4 -->
+<p><i class="fa fa-google fa-lg custom-bullet-item"></i>
+Google<br>
+      <small style="color: #777; float: left">
+        <i class="fa fa-calendar"></i> Nov 2011-Feb 2012 |
+        <i class="fa fa-map-marker"></i> Zurich, CH |
+    </small>
+</p>
+Software Engineer intern on one of the Google Maps backend teams.
+<!-- 5 -->
+<p><i class="fa fa-x fa-lg custom-bullet-item">
+<img class="custom-bullet-item-img" src="images/oracle.png">
+</i>
+Nimbula (acquired by Oracle)<br>
+      <small style="color: #777; float: left">
+        <i class="fa fa-calendar"></i> Jun-Jul 2011 |
+        <i class="fa fa-map-marker"></i> Cape Town, ZA |
+    </small>
+</p>
+Software Engineer intern--created customized cloud VMs
+
+<br><br><br>
+
+<h2>Extras</h2>
+<br><br>
+I dabble in a lot of things. Here I keep a list of academically-relevant successes. For the adventurous, rumour has it that there's an easter egg on this page, should you want to discover more of my personal thoughts on life, the universe, and everything.
+<ul class="fa-ul main-list">
+  <li class="paragraph-list-item">
+    <p>
+      <small style="color: #777; float: left">
+        <i class="fa fa-calendar"></i> 2015 |&nbsp;
+      </small>
+      1st Place: Microsoft Cyberspace 2025 Essay
+    </p>
+  </li>
+
+  <li class="paragraph-list-item">
+    <p>
+      <small style="color: #777; float: left">
+        <i class="fa fa-calendar"></i> 2009-2013 |&nbsp;
+      </small>
+     Van der Walt Medal for Best Computer Science student, Stellenbosch University
+    </p>
+  </li>
+</ul>
+<br>
+
+<h2>Contact</h2>
+<p>
+E-mail:<br>
+&lt;my-three-letter-initials&gt;@cmu.edu<br><br>
+
+CIC 2315G<br>
+5000 Forbes Ave<br>
+Pittsburgh PA 15213<br>
+</p>
+<hr />
+
+<div class="social-list">
+    <span id="gfooter" class="fa fa-github fa-lg main-list-item-icon-small"></span>
+    <a href="https://github.com/rvantonder main-list-item-icon-small">rvantonder</a>
+    <span id="tfooter" class="fa fa-twitter fa-lg main-list-item-icon-small"></span>
+    <a href="http://www.twitter.com/rvtond">rvtond</a>
+    <span id="lfooter" class="fa fa-linkedin-square fa-lg main-list-item-icon-small"></span>
+    <a href="http://www.linkedin.com/in/rijnard">rvantonder</a>
+    <span class="fa fa-x fa-lg main-list-item-icon-small">
+    <img class="custom-bullet-item-img" src="images/sa.png"</span>
+</div>
+
       </div>
-      {% endif %}
+      
     </main>
 </div>
+
+
+  </body>
+</html>
