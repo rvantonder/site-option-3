@@ -13,7 +13,6 @@ $(window).scroll ->
       easter_egg()
 
 easter_egg = () ->
-    var txt;
     txt = "<br><br><br><hr/><br><h1>You found the easter egg :)</h1>";
     txt += "<p>This is primarily a collection of thoughts and sayings that I've collected over time.</p>";
     txt += "<h2>Things people have said that strike a chord with me</h2>";
